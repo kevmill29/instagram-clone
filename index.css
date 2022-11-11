@@ -29,7 +29,7 @@ header{
 background-color:white;
 border: 1px solid #C6C6C6;
 border-radius: 2px; 
-box-shadow: 0px 1px 1px 2px #C6C6C6; 
+box-shadow: 0px 1px 0px 2px #C6C6C6; 
 }
 
 .container,
@@ -55,7 +55,7 @@ font-weight: 700;
 }
 
 .post-div{
-    border-bottom: 2px solid #C6C6C6;
+ border-bottom: 2px solid #C6C6C6;
 }
 
 .avatar{
