@@ -1,23 +1,23 @@
 export const posts = [
     {
-        name: "Vincent van Gogh",
+        name: "Vincent van Dog",
         username: "vincey1853",
         isLiked: false,
         location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
+        avatar: "images/vandog.png",
+        post: "images/Fotor_AI.png",
+        comment: "shooting the breeze lol",
         likes: 21,
         
     },
     {
-        name: "Gustave Courbet",
+        name: "Gustave Catbet",
         username: "gus1819",
         isLiked: false,
         location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
-        comment: "i'm feelin a bit stressed tbh",
+        avatar: "images/cat.png",
+        post: "images/guastave.png",
+        comment: "Flexing with this human",
         likes: 4,
         
     },
@@ -26,8 +26,8 @@ export const posts = [
         username: "jd1735",
         isLiked: false,
         location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
+        avatar: "images/jdavatar.png",
+        post: "images/jdphoto.png",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152,
         

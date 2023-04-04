@@ -6,23 +6,27 @@ import { posts } from './data.js'
 document.addEventListener('click', function(e){
     if(e.target.dataset.heart){
        handleLikeClick(e.target.dataset.heart) 
+       
     }
 })
 
 
 function handleLikeClick(postId){ 
+  
     const targetPostObj = posts.filter(function(post){
         return post.username === postId
     })[0]
     
-    if (targetPostObj.isLiked){
+    if (targetPostObj.isLiked ){
         targetPostObj.likes--
+       
         
     } else{
         targetPostObj.likes++
         
     }
     targetPostObj.isLiked = !targetPostObj.isLiked
+    
     render()
    
 }
@@ -32,6 +36,18 @@ function getHtmlFeed(){
  let igPosts = ``
 
     posts.forEach(function(post){
+       
+    //    Swaps Images After isLiked is True
+       function imgSwap(){
+           if (post.isLiked){
+               return "fa-solid fa-heart"
+           } else {
+               return "fa-regular fa-heart"
+           }
+       }
+
+    
+        
        igPosts += `
 <section>
   <div class="post-div">
@@ -43,20 +59,27 @@ function getHtmlFeed(){
         </p>
     </div>
     <div "img-container">  
-      <img class="post-img"  src="${post.post}">
+      <img 
+      class="post-img"  
+      src="${post.post}"
     </div>
     <div class="button-sect">
-      <img id="likebtn" 
-      src="images/icon-heart.png" 
+    
+      <i
+      class="${imgSwap(post)}"
       alt="like this post" 
-      class="icon" 
-      data-heart=${post.username}>
-      <img src="images/icon-comment.png" 
+      data-heart=${post.username}
+      id="likeBtn"
+      ></i>
+      <img 
+      src="images/icon-comment.png" 
       alt="comment on this post" 
-      class="icon">
+      class="icon"
+      
+      />
       <img src="images/icon-dm.png" 
       alt="share this post" 
-      class="icon">
+      class="icon"/>
     </div>
     <div class="post-btm">
       <p -likes" data-heart="${post.username}"><strong>${post.likes} likes</strong><p><br>

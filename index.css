@@ -88,30 +88,47 @@ border-radius: 50%;
   width: 100%;
    border-radius: 1px 1px #C6C6C6;
 }
+
+
 .icon{
     width: 23.3px;
     height:22.13px;
-    margin:21px 20px 11px 0px;
     padding:0; 
 }
-.icon:hover,
-.icon:active{
+
+i {
+    font-size: 23px;
+    line-height: 20px;
+}
+
+i:hover,
+i:active{
  opacity: 0.5;
 }
-.icon:focus,
-.icon:active{
+i:focus,
+i:active{
     filter: invert(12%) sepia(83%) saturate(4217%) hue-rotate(352deg) brightness(110%) contrast(87%);
     opacity: 1;
 }
+
+i.fa-solid{
+    color: red;
+}
+
 .button-sect,
 .post-btm{
     padding:0 10px 10px 10px; 
 }
 
-p{
-   
-    
+.button-sect{
+    display: flex;
+    align-content: center;
+    gap: 20px;
 }
+
+
 strong{
     font-size: 13px; 
 }
+
+
