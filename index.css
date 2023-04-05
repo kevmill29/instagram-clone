@@ -94,11 +94,13 @@ border-radius: 50%;
     width: 23.3px;
     height:22.13px;
     padding:0; 
+   margin-top: 10px;
 }
 
 i {
     font-size: 23px;
     line-height: 20px;
+   margin-top: 10px;
 }
 
 i:hover,
