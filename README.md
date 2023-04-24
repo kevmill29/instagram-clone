@@ -5,8 +5,6 @@ Getting Started
 To use this code, you will need to do the following:
 
 Clone the repository using git clone <repository-url>.
-Install the dependencies using npm install.
-Run the app using npm start.
 Code Overview
 The code is divided into two main parts:
 
